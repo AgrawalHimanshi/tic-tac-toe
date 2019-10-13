@@ -11,32 +11,35 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-	<h1>COME AND PLAY WITH TIC TAE TOE</h1>
+	
 
 	<div class="container">
 		<div class="jumbotron">
 			<h2>Welcome Player!</h2>
 			<p>Get ready to play</p>
-			<button id='b' type="button" class="btn btn-primary btn-lg" name="button" >Restart</button>
+			<button onclick="startGame()" id='b' type="button" class="btn btn-primary btn-lg" name="button" >Restart</button>
 		</div>
 
 			<table align="center">
 					<tr>
-					<td>	</td>
-					<td>	</td>
-					<td>	</td>	
+					<td class="cell" id="0"></td>
+					<td class="cell" id="1"></td>
+					<td class="cell" id="2"></td>
 					</tr>
 					<tr>
-					<td>	</td>
-					<td>	</td>
-					<td>	</td>	
+					<td class="cell" id="3"></td>
+					<td class="cell" id="4"></td>
+					<td class="cell" id="5"></td>	
 					</tr>
 					<tr>
-					<td>	</td>
-					<td>	</td>
-					<td>	</td>	
+					<td class="cell" id="6"></td>
+					<td class="cell" id="7"></td>
+					<td class="cell" id="8"></td>	
 					</tr>
 			</table>
+			<div class="endgame" >	
+					<div class="text"></div>
+			</div>	
 
 	</div>
 	<script type="text/javascript" src="myscript.js">
